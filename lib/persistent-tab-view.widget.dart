@@ -147,6 +147,7 @@ class PersistentTabView extends PersistentTabViewBase {
     CutsomWidgetRouteAndNavigatorSettings routeAndNavigatorSettings =
         const CutsomWidgetRouteAndNavigatorSettings(),
     this.confineInSafeArea = true,
+    required onItemSelected,
     this.onWillPop,
     this.stateManagement = true,
     this.handleAndroidBackButtonPress = true,
@@ -165,6 +166,7 @@ class PersistentTabView extends PersistentTabViewBase {
           itemCount: itemCount,
           resizeToAvoidBottomInset: resizeToAvoidBottomInset,
           bottomScreenMargin: bottomScreenMargin,
+          onItemSelected: onItemSelected,
           onWillPop: onWillPop,
           confineInSafeArea: confineInSafeArea,
           stateManagement: stateManagement,
